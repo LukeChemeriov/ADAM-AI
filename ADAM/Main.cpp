@@ -37,14 +37,17 @@ int main() {
 			std::cout << "Hello there!" << std::endl;
 			
 		}
-		else if (command == "open notepad") {
+
+		/* the whole things below here doesn't work, and I have yet to trouble shoot it. */
+
+		else if (command == "open notepad") { 
 
 			std::cout << "Opening Notepad" << std::endl;
 			system("notepad");
 			std::cout << "I've opened Notepad for you." << std::endl;
 			
 		}
-		else if (command == "open edge") {
+		else if (command == "open edge") { 
 
 			std::cout << "Opening Microsoft Edge" << std::endl;
 			system("explorer shell:Appsfolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge");
