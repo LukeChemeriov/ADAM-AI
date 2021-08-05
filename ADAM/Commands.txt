@@ -4,12 +4,3 @@ The commands you can enter are listed below:
 	
 	"Open Notepad"
 	"Open Edge" - MS Windows
-	command2
-	command3
-	command4
-	command5
-	command6
-	command7
-	command8
-	command9
-	command10
