@@ -51,7 +51,7 @@ int main() {
 			if (running_correctly == true) {
 				std::cout << "ADAM is running correctly." << std::endl;
 				std::cout << "\nADAM Version 1.0 Beta (Build 1507)" << std::endl;
-				std::cout << "© MD Dev. All rights reserved." << std::endl;
+				std::cout << (wchar_t)0xA9 << "MD Dev. All rights reserved." << std::endl;
 				std::cout << "\nThe ADAM Artificial Intelligence program and it's user interface are" << std::endl;
 				std::cout << "protected by both trademark and copyright in the United Kingdom, Russia," << std::endl;
 				std::cout << "and pending other regions. \n\n\nThis product is licensed under beta testing" << std::endl;
