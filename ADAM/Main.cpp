@@ -158,5 +158,8 @@ int main() {
 			std::cout << "Once upon a time, there was a beggining.\nSoon after there was a middle. \nThe End." << std::endl;
 
 		}
+		else {
+		std::cout << "I'm sorry. I didn't understand that. Try checking your spelling, or\ntype \"help\" to see a list of commands." << std::endl;
+}
     }
 }
