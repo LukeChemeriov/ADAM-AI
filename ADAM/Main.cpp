@@ -8,6 +8,12 @@
 std::string command;
 time_t t = time(NULL);
 tm* timePtr = localtime(&t);
+#ifdef _WIN32 /* if the OS is windows, make CLR_SCRN "cls" */
+#define CLR_SCRN "cls"
+#else /* use "clear" for literally anything else, like mac, linux, etc */
+#define CLR_SCRN "clear"
+#endif
+
 
 
 /* The infamous main */
@@ -54,6 +60,10 @@ int main() {
 				std::cout << "in ANY way without the written permission of MD Dev." << std::endl;
 
 			}
+			
+		}
+		else if (command == "clear") {
+			system(CLR_SCRN);
 		}
 
 		/* the whole things below here doesn't work, and I have yet to trouble shoot it. */
