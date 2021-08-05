@@ -28,5 +28,14 @@
     <Text Include="Commands.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="License.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="InstallSuccessInfo.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="InstallSummaryInfo.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

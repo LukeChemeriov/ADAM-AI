@@ -154,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Commands.txt" />
+    <Text Include="InstallSuccessInfo.txt" />
+    <Text Include="InstallSummaryInfo.txt" />
+    <Text Include="License.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

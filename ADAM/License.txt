@@ -1,0 +1,8 @@
+ADAM Version 1.0 Beta (Build 1507)  
+MD Dev. All rights reserved.  
+The ADAM Artificial Intelligence program and it's user interface are  
+protected by both trademark and copyright in the United Kingdom, Russia,  
+and pending other regions. This product is licensed under beta testing  
+terms. This excecutable, the installer excecutable, or any of the ADAM files  
+cannot legally be disassembled, decompiled, modified, copied, or redistributed  
+in ANY way without the written permission of MD Dev.
