@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include "bfunc/bfunc.h"
-std::string command;
+char command[100];
 time_t t = time(NULL);
 tm* timePtr = localtime(&t);
 #ifdef _WIN32 /* if the OS is windows, make CLR_SCRN "cls" */
@@ -33,7 +33,7 @@ int main() {
     while (true) {
 
         std::cout << "ADAM >>>";
-        std::cin >> command;
+		std::cin.getline(command, sizeof(command));
 		if (command == "exit" | command == "EXIT" | command == "eXIT") {
 
 			exit(-1);
@@ -65,22 +65,26 @@ int main() {
 		else if (command == "clear") {
 			system(CLR_SCRN);
 		}
+		else if (command == "where is chuck norris") {
+			std::cout << "You don't find Chuck Norris. Chuck Norris finds YOU." << std::endl;
+		}
+
+
+		else if (command == "notepad") {
+			system("cd C:\\Windows\\System32 && notepad.exe");
+		}
 
 		/* the whole things below here doesn't work, and I have yet to trouble shoot it. */
-
-		else if (command == "open notepad") { 
-
-			std::cout << "Opening Notepad" << std::endl;
-			system("notepad");
-			std::cout << "I've opened Notepad for you." << std::endl;
 			
-		}
-		else if (command == "open edge") { 
+		else if (command == "edge") { 
 
 			std::cout << "Opening Microsoft Edge" << std::endl;
 			system("explorer shell:Appsfolder\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge");
 			std::cout << "I've opened Edge for you." << std::endl;
 			
+		}
+		else if (command == "explorer") {
+			system("explorer");
 		}
 		/* easter egg section */
 		else if (command == "where is chuck norris") {
@@ -156,6 +160,9 @@ int main() {
 		else if (command == "tell me a story") {
 			std::cout << "Once upon a time, there was a beggining.\nSoon after there was a middle. \nThe End." << std::endl;
 
+		}
+		else {
+		std::cout << "I'm sorry, I didn't understand that. Check your spelling,\n or type \"help\" to get a list of\ncommands." << std::endl;
 		}
     }
 }
