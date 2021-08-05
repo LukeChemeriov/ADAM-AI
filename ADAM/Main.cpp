@@ -19,7 +19,7 @@ int main() {
     std::cout << "\n\nEntering prompt..." << std::endl;
     std::cout << "\nADAM Prompt v1.0 - (c) MD Dev" << std::endl;
     std::cout << "Type \"help\" for more commands." << std::endl;
-
+	bool running_correctly = true;
 
 
 
@@ -36,6 +36,24 @@ int main() {
 
 			std::cout << "Hello there!" << std::endl;
 			
+		}
+		else if (command == "help") {
+			std::cout << "You can enter any of these commands: " << std::endl;
+			std::cout << "\t\"Open Notepad\"\t\n\"Open Edge\" - MS Windows Only" << std::endl;
+		}
+		else if (command == "status") {
+			if (running_correctly == true) {
+				std::cout << "ADAM is running correctly." << std::endl;
+				std::cout << "\nADAM Version 1.0 Beta (Build 1507)" << std::endl;
+				std::cout << "© MD Dev. All rights reserved." << std::endl;
+				std::cout << "\nThe ADAM Artificial Intelligence program and it's user interface are" << std::endl;
+				std::cout << "protected by both trademark and copyright in the United Kingdom, Russia," << std::endl;
+				std::cout << "and pending other regions. \n\n\nThis product is licensed under beta testing" << std::endl;
+				std::cout << "terms. This excecutable, the installer excecutable, or any of the ADAM files" << std::endl;
+				std::cout << "cannot legally be disassembled, decompiled, modified, copied, or redistributed" << std::endl;
+				std::cout << "in ANY way without the written permission of MD Dev." << std::endl;
+
+			}
 		}
 
 		/* the whole things below here doesn't work, and I have yet to trouble shoot it. */
