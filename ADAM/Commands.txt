@@ -1,7 +1,9 @@
+[WARNING] Most commands will be in lowercase.
+
 The commands you can enter are listed below:
 	
-	command0
-	command1
+	"Open Notepad"
+	"Open Edge" - MS Windows
 	command2
 	command3
 	command4
