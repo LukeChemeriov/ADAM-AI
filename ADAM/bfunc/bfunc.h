@@ -25,7 +25,7 @@ void pickRandomYourMamaJoke() {
                 std::cout << "Yo mama's like a puppy... everybody wants to give her a hug." << std::endl;
             case 6:
                 std::cout << "Yo mama's breath smells so fresh that Tesco could make a chewing gum flavour based on it." << std::endl;
-                std::cout << "MD Dev is not affiliated with Tesco.";
+                std::cout << "MD Dev is not affiliated with Tesco." << std::endl;
             
         }
     

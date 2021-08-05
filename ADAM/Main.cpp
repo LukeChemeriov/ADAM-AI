@@ -4,8 +4,10 @@
 /* Pre processor doodads and variable delcarations */
 
 #include <iostream>
+#include "cstdio"
+#include <string>
 #include "bfunc/bfunc.h"
-char command[100];
+std::string command;
 time_t t = time(NULL);
 tm* timePtr = localtime(&t);
 #ifdef _WIN32 /* if the OS is windows, make CLR_SCRN "cls" */
@@ -33,7 +35,7 @@ int main() {
     while (true) {
 
         std::cout << "ADAM >>>";
-		std::cin.getline(command, sizeof(command));
+		std::getline(std::cin, command);
 		if (command == "exit" | command == "EXIT" | command == "eXIT") {
 
 			exit(-1);
