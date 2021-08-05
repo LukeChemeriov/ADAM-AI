@@ -87,11 +87,6 @@ int main() {
 			system("explorer");
 		}
 		/* easter egg section */
-		else if (command == "where is chuck norris") {
-
-			std::cout << "You don't find Chuck Norris. No no no, Chuck Norris finds YOU." << std::endl;
-			
-		}
 		else if (command == "do you have any pets") {
 
 			std::cout << "No. I used to have a few bugs, but my creators got rid of them." << std::endl;
@@ -160,9 +155,6 @@ int main() {
 		else if (command == "tell me a story") {
 			std::cout << "Once upon a time, there was a beggining.\nSoon after there was a middle. \nThe End." << std::endl;
 
-		}
-		else {
-		std::cout << "I'm sorry, I didn't understand that. Check your spelling,\n or type \"help\" to get a list of\ncommands." << std::endl;
 		}
     }
 }
